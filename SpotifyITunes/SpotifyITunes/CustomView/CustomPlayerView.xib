@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CustomPlayerView" customModule="SpotifyITunes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="475" height="118"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="spotify" translatesAutoresizingMaskIntoConstraints="NO" id="z2G-tf-1qm">
+                    <rect key="frame" x="5" y="5" width="52.333333333333336" height="108"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <integer key="value" value="2"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Song Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAu-Ow-aIZ">
+                    <rect key="frame" x="77.333333333333343" y="7" width="327.66666666666663" height="18"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Singer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aun-LS-atV">
+                    <rect key="frame" x="77.333333333333343" y="30" width="327.66666666666663" height="16.333333333333329"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4d0-g1-CyR">
+                    <rect key="frame" x="5" y="5" width="400" height="108"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AnS-td-cdX">
+                    <rect key="frame" x="415" y="45.666666666666657" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="IY9-Lt-4HT"/>
+                        <constraint firstAttribute="height" constant="40" id="Wx0-Kj-0Wm"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" red="0.23137254901960785" green="0.23137254901960785" blue="0.23137254901960785" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="AnS-td-cdX" firstAttribute="leading" secondItem="hAu-Ow-aIZ" secondAttribute="trailing" constant="10" id="8lR-dS-NkK"/>
+                <constraint firstItem="4d0-g1-CyR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="BPJ-4L-a0e"/>
+                <constraint firstItem="AnS-td-cdX" firstAttribute="leading" secondItem="4d0-g1-CyR" secondAttribute="trailing" constant="10" id="BW1-ye-sAc"/>
+                <constraint firstItem="z2G-tf-1qm" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.11/1" id="JIw-4H-wSS"/>
+                <constraint firstItem="Aun-LS-atV" firstAttribute="top" secondItem="hAu-Ow-aIZ" secondAttribute="bottom" constant="5" id="Jad-1f-8nU"/>
+                <constraint firstItem="AnS-td-cdX" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="QfN-H7-VpQ"/>
+                <constraint firstItem="hAu-Ow-aIZ" firstAttribute="leading" secondItem="z2G-tf-1qm" secondAttribute="trailing" constant="20" id="Qri-Xk-Q7f"/>
+                <constraint firstItem="4d0-g1-CyR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="TTx-Uw-8Ym"/>
+                <constraint firstItem="Aun-LS-atV" firstAttribute="trailing" secondItem="hAu-Ow-aIZ" secondAttribute="trailing" id="TwF-ne-4Fh"/>
+                <constraint firstItem="z2G-tf-1qm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="5" id="aSz-2f-OG2"/>
+                <constraint firstItem="hAu-Ow-aIZ" firstAttribute="top" secondItem="z2G-tf-1qm" secondAttribute="top" constant="2" id="hv2-y2-JAH"/>
+                <constraint firstAttribute="bottom" secondItem="4d0-g1-CyR" secondAttribute="bottom" constant="5" id="jMW-pp-Mf2"/>
+                <constraint firstItem="Aun-LS-atV" firstAttribute="leading" secondItem="hAu-Ow-aIZ" secondAttribute="leading" id="mDX-tV-wev"/>
+                <constraint firstAttribute="bottom" secondItem="z2G-tf-1qm" secondAttribute="bottom" constant="5" id="rpo-s6-lss"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AnS-td-cdX" secondAttribute="trailing" constant="20" id="svw-WX-YN2"/>
+                <constraint firstItem="z2G-tf-1qm" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="vxG-lu-K16"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="btnForPlayPause" destination="AnS-td-cdX" id="gbk-yQ-9iP"/>
+                <outlet property="btnForView" destination="4d0-g1-CyR" id="R4s-jc-RKv"/>
+                <outlet property="image" destination="z2G-tf-1qm" id="Ec9-rz-2Xt"/>
+                <outlet property="singerName" destination="Aun-LS-atV" id="zxw-x3-4At"/>
+                <outlet property="songName" destination="hAu-Ow-aIZ" id="nAY-dL-CWR"/>
+            </connections>
+            <point key="canvasLocation" x="156.15384615384616" y="-259.478672985782"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="spotify" width="1000" height="750"/>
+    </resources>
+</document>

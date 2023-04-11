@@ -1,0 +1,6 @@
+framework module Pods_SpotifyITunes_SpotifyITunesUITests {
+  umbrella header "Pods-SpotifyITunes-SpotifyITunesUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
